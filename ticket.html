@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ticket.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Raise Ticket</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="header_logo">
+        <a href="#">
+          <img
+            src="./images/Coastr_logo.png"
+            alt="coastr_logo"
+            class="header_logo_image"
+          />
+        </a>
+      </div>
+
+      <div class="header_homepage">
+        <a href="index.html" class="header_homepage_text"
+          >Help & Support Centre</a
+        >
+        <a href="#" class="header_homepage_text">3rd party Integrations</a>
+        <a href="#" class="header_homepage_text">Videos</a>
+        <a href="#" class="header_homepage_text">FAQs</a>
+        <a href="#" class="header_homepage_text">Feedback</a>
+      </div>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search">
+      <div class="search_left">
+        <div class="search_heading">
+          <p class="search_heading_text">
+            Welcome to the Coastr Help & Support Centre!
+          </p>
+        </div>
+
+        <div class="search_box">
+          <div class="search_icon_box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="search_icon"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <form action="#" class="search_form">
+            <input
+              type="text"
+              class="search_box_1"
+              placeholder="search for answers"
+            />
+          </form>
+        </div>
+      </div>
+
+      <div class="search_right">
+        <img
+          src="./images/customer_support.jpg"
+          alt="customer-support"
+          class="search_right_image"
+        />
+      </div>
+    </div>
+
+    <div class="midbody">
+      <!-- ASIDE -->
+      <div class="aside">
+        <div class="aside_link_box">
+          <a href="./test.html" class="aside_link">Booking</a>
+        </div>
+        <div class="aside_link_box">
+          <a href="#" class="aside_link">Customer</a>
+        </div>
+        <div class="aside_link_box">
+          <a href="#" class="aside_link">Fleet</a>
+        </div>
+        <div class="aside_link_box">
+          <a href="#" class="aside_link">Telematics & Immobilsation</a>
+        </div>
+        <div class="aside_link_box">
+          <a href="#" class="aside_link">Vehicle Scheduler</a>
+        </div>
+        <div class="aside_link_box">
+          <a href="#" class="aside_link">Damages,Service and Repairs</a>
+        </div>
+        <div class="aside_link_box">
+          <a href="#" class="aside_link">Billing and Invoices</a>
+        </div>
+        <div class="aside_link_box">
+          <a href="#" class="aside_link">Reports</a>
+        </div>
+        <div class="aside_link_box">
+          <a href="#" class="aside_link">Websites</a>
+        </div>
+        <div class="aside_link_box">
+          <a href="#" class="aside_link">Settings</a>
+        </div>
+      </div>
+
+      <!-- SECTION (Ticket)  -->
+
+      <div class="ticket">
+        <div class="ticket_header">
+          <h2>Raise Ticket</h2>
+        </div>
+
+        <form class="ticket_form">
+          <div class="ticket_name">
+            <label for="customer_name">Name</label>
+            <input
+              type="text"
+              id="customer_name"
+              name="customer_name"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="ticket_category">
+            <label for="customer_category">Category</label>
+            <input
+              list="customer_category"
+              name="category"
+              placeholder="Select category"
+            />
+            <datalist id="customer_category">
+              <option value="Booking"></option>
+              <option value="Customer"></option>
+              <option value="Fleet"></option>
+              <option value="Billing & Invoices"></option>
+              <option value="Vechile Scheduler"></option>
+              <option value="Others"></option>
+            </datalist>
+          </div>
+
+          <div class="ticket_email">
+            <label for="customer_email">Email</label>
+            <input
+              type="customer_email"
+              id="customer_email"
+              name="customer_email"
+              placeholder="Enter email"
+            />
+          </div>
+
+          <div class="ticket_subject">
+            <label for="customer_subject">Subject</label>
+            <input
+              type="text"
+              id="customer_subject"
+              name="customer_subject"
+              placeholder="Enter subject"
+            />
+          </div>
+
+          <div class="ticket_description">
+            <label for="customer_description">Description</label>
+            <textarea
+              name="customer_description"
+              rows="10"
+              cols="30"
+              placeholder="Enter the description of issue"
+            >
+Describe your issue
+            </textarea>
+          </div>
+
+          <div class="ticket_attachment">
+            <label for="customer_attachment">Select a file</label>
+            <input
+              type="file"
+              id="customer_attachment"
+              name="customer_attachment"
+            />
+          </div>
+
+          <div class="ticket_submit">
+            <input type="submit" value="Create Ticket" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <hr />
+    <div class="footer_box">
+      <img
+        src="./images/Coastr_logo.png"
+        alt="coastr_logo"
+        class="footer_coastr"
+      />
+      <div class="footer_sociallogo">
+        <img
+          src="./images/facebook_circle_color.png"
+          alt="faceboot"
+          class="footer_social"
+        />
+        <img
+          src="./images/instagram_circle_color.png"
+          alt="instagram"
+          class="footer_social"
+        />
+        <img
+          src="./images/linkedin_circle_color.png"
+          alt="linkedin"
+          class="footer_social"
+        />
+        <img
+          src="./images/youtube_circle_color.png"
+          alt="youtube"
+          class="footer_social"
+        />
+      </div>
+    </div>
+  </body>
+</html>
